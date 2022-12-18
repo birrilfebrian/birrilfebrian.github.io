@@ -1,0 +1,491 @@
+/* fonts
+==============================================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;1,400&display=swap');
+:root{
+    --body: #fefefe;
+    --primary: #9b0b32;
+    --primary-2: #e53e62;
+    --secondaty:#ffc107;
+    --secondaty-2:#aa830e;
+    --box-warna:#f6cdd8;
+    --box-warna2:#e53e6a;
+    --gray : #788190;
+    --footer :#c12850;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+body::after{
+    background-image: url("4853433.jpg");
+    content: "";
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;   
+}
+
+/* Button
+===============================================================================
+*/
+
+.btn{
+    border-radius: 8px;
+}
+
+.btn-primary,
+.btn-outline-secondary,
+.btn-danger,
+.btn-info{
+    padding: 12px 20px;
+}
+
+.btn-info{
+  color:azure;
+}
+
+.btn-primary{
+    background-color:var(--secondaty) ;
+}
+
+.btn-primary:hover{
+    background-color: var(--secondaty-2);
+}
+
+.btn-outline-secondary{
+    background-color: var(--primary-2);
+    border: 1px solid var(--primary-2);
+    color: azure;
+}
+
+.btn-outline-secondary:hover{
+    background-color: var(--primary);
+    border: var(--primary);
+    color:azure;
+}
+
+.btn-outline-secondary:focus{
+    background-color: var(--primary);
+    border: var(--primary);
+    color:azure;
+}
+
+/*
+Navbar
+=========================================================================
+*/
+
+.navbar .btn-outline-secondary{
+    border: 1px solid var(--primary-2);
+    color:azure;
+    font-size: 14;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.navbar{
+    padding: 32px 0;
+}
+
+.nav-link{
+    margin-left: 41px;
+    font-size: 16px;
+    color: var(--gray);
+}
+
+.navbar-nav .nav-link.active{
+    font-weight: bold;
+    color:var(--primary-2);
+}
+
+.navbar-brand img, .navbar-brand svg{
+    width: auto;
+    height: 50px;
+}
+
+/* 
+HEro
+==================================================\
+*/
+section.hero{
+margin-top: 25vh;
+/* max-height: 300px; */
+}
+
+
+section.hero .box {
+border-radius: 50px;
+  background: var(--box-warna);
+  height: 100%;
+  padding: 100px 100px;
+  /* position:; */
+}
+
+.hero-brand{
+    z-index: 1;
+    margin-top: -430px;
+    /* position: relative; */
+}
+
+.hero-brand p{
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 600px) {
+    .herim {
+        opacity: 0;
+    }
+    .hero-brand{
+        margin-top: -55vh;
+    }
+    section.hero .box {
+      padding: 30px 30px;
+    }
+    .section.apps .aplikasi {
+        font-size: 50px;
+        font-weight: 700;
+        }
+  }
+
+  @media only screen and (min-height: 600px) {
+    section.hero{
+      margin-top: 20vh;
+      /* max-height: 300px; */
+      }
+    }
+  @media only screen and (min-height: 800px) {
+    section.detail{
+      margin-top: 600px !important;
+      }
+    }
+.herim {
+    max-width: 100%;
+    /* z-index: 2; */
+    position: absolute;
+    margin-top: -30px;
+}
+
+section.hero .text-hero{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+}
+
+
+
+
+/* Fitur Details
+=====================================================
+ */
+ section.detail{
+    margin-top: 450px;
+}
+
+section.detail .items{
+    padding-top: 100px;
+}
+
+ section.detail h3{
+    padding:30px 0;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 78px;
+    color: black;
+ }
+ section.detail p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--gray);
+ }
+
+ section.detail .icons{
+    padding:27px 0;
+ }
+
+ section.detail h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color:black;
+ }
+
+  section.detail .rounded{
+    border-radius: 20px !important;
+ }
+
+ section.detail .card{
+    z-index: 2;
+    padding:30px 30px;
+ }
+
+
+ /* Apps
+ ===================================================
+  */
+
+  section.apps .skew{
+    margin-top:-90px;
+    width: 100%;
+	height: 200px;
+	transform: skewY(4deg);
+	background: var(--box-warna);
+    z-index: 1;
+    position: absolute;
+  }
+  
+
+  section.apps .card{
+    padding:30px 30px;
+  }
+  section.apps .rounded{
+    border-radius: 20px !important;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+ }
+  section.apps .card img{
+    border-radius: 25px !important;
+  }
+
+  section.apps .box{
+    /* margin-top:-90px; */
+    width: 100%;
+    padding: 100px 0;
+
+	/* height:500px; */
+	background: var(--box-warna2);
+  }
+
+section.apps .text-header,
+section.liput .text-header{
+    margin-top: 200px;
+}
+
+  section.apps .text-header h3,
+  section.liput .text-header h3{
+    z-index: 2;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 78px;
+    color: azure;
+  }
+
+  section.apps .text-details h3{
+    z-index: 2;
+    /* margin-top:-30vh; */
+    padding:30px 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 78px;
+    color: black;
+  }
+
+  section.apps .text-details p{
+    /* margin-top:-30vh; */
+    padding:30px 0;
+    font-size: 20px;
+    font-weight: 200;
+    /* line-height: 78px; */
+    color: black;
+  }
+
+  section.apps p,
+  section.liput p{
+    z-index: 2;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 38px;
+    color: azure;
+  }
+
+/* paket
+======================== */
+
+section.paketan{
+  margin-bottom: 20vh;
+}
+section.paketan .text-header .h3{
+  z-index: 2;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 78px;
+  color: black;
+}
+
+section.paketan .text-header .h3 b{
+  z-index: 2;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 78px;
+  color: var(--primary-2);
+}
+
+
+section.paketan .card{
+  border-radius: 25px !important;
+  padding: 30px 30px;
+  z-index: 2;
+}
+
+section.paketan .card .header{
+  /* z-index: 2; */
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 78px;
+  color: black;
+}
+
+section.paketan .card .detail{
+  /* z-index: 2; */
+  padding: 0 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 38px;
+  color: var(--gray);
+}
+
+section.paketan .card .subtit{
+  /* z-index: 2; */
+  padding: 200px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
+  color: black;
+}
+
+/* Client
+=========================== */
+
+
+
+section.client .text-header h3{
+  z-index: 2;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 78px;
+  color: var(--box-warna2);
+}
+section.client .text-header p,
+section.detail .text-header p,
+section.paketan .text-header p{
+  z-index: 2;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 38px;
+  color: var(--gray);
+}
+
+
+
+section.client .preview-client {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px; 
+}
+/* section.client .rounded{
+  border-radius: 20px !important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+} */
+
+section.client .card {
+  z-index: 2;
+  border-radius: 20px;
+}
+
+section.client .card-header{
+  padding:0 0px;
+}
+
+/* Liput
+=============================
+ */
+
+ section.liput .skew{
+  margin-top:-90px;
+  width: 100%;
+  height: 200px;
+  transform: skewY(2deg);
+  background: var(--box-warna2);
+  z-index: 1;
+  position: absolute;
+}
+
+section.liput .carousel{
+  margin-bottom: 200px;
+}
+
+section.liput .box{
+  width: 100%;
+  padding-top:10px;
+  padding-bottom: 90px;
+  /* height: 30vh; */
+background: var(--box-warna2);
+}
+
+
+
+section.liput .carousel-item .rounded-item{
+  border-radius: 20px;
+}
+
+/* footer
+============================ */
+
+section.footer .skew{
+  margin-top:-120px;
+  width: 100%;
+  transform: skewY(-3deg);
+  height: 200px;
+  background: var(--footer);
+  z-index: 1;
+  position: absolute;
+}
+
+section.footer .box{
+  width: 100%;
+  padding: 100px 0;
+background: var(--footer);
+}
+
+section.client .text-header h3{
+  z-index: 2;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 78px;
+  color: var(--box-warna2);
+}
+
+/* tambahan
+=============================
+ */
+
+ .carousel-fade .active.carousel-item-start,
+ .carousel-fade .active.carousel-item-end {
+   -webkit-animation: fadeinout 4s linear forwards;
+   animation: fadeIn 4s linear forwards;
+  
+ }
+
+ @-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+ @keyframes fadeIn {
+    0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+  }
+/* .card-wrapper {
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+  .card-body img {
+    margin-top: -100px;
+  } */
+
